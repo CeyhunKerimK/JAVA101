@@ -1,4 +1,4 @@
-package Sayıları_büyükten_küçüğe_sıralayan_program;
+package Sayıları_küçükten_büyüğe_sıralayan_program;
 import java.util.Scanner;
 
 public class Main {
