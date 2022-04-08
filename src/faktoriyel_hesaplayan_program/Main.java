@@ -9,7 +9,6 @@ public class Main {
         System.out.print("r grubunun eleman sayısını giriniz: ");
         r = input.nextInt();
         int cıkarma = n-r;
-
         for (int i = 1;i<=n;i++){
             n_faktoriyel *= i;
         }
