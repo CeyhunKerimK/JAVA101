@@ -6,7 +6,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.print("Bir sayı giriniz: ");
         sayi = input.nextInt();
-        for (int i = 0;i<sayi;i++) {
+        /*for (int i = 0;i<sayi;i++) {
             for (int j = sayi;j>(i+1);j--) {
                 System.out.print(" ");
             }
@@ -14,7 +14,7 @@ public class Main {
                 System.out.print("*");
             }
             System.out.println();
-        }
+        }*/
         int temp = 1;
         for(int i = (sayi-1); i > 0; i--){
             for(int j = 0; j < temp; j++)
