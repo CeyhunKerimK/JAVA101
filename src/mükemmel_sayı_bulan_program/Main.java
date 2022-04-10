@@ -1,0 +1,21 @@
+package mükemmel_sayı_bulan_program;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("bir sayı giriniz: ");
+        int sayi = input.nextInt();
+        int total = 0;
+        for (int i = 1;i<sayi;i++) {
+            if (sayi%i==0) {
+                total += i;
+            }
+        }
+       if (sayi == total) {
+           System.out.println(sayi+" bir mükemmel sayıdır.");
+       }
+       else {
+           System.out.println(sayi+" bir mükemmel sayı değildir.");
+       }
+    }
+}
