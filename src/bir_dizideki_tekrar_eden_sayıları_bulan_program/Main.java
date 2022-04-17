@@ -3,18 +3,23 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         int[] intList = {1,12,15,1,2,3,3,98,45,45,1,2,3,12};
-        int[] duplicate = new int[intList.length];
-        int startIndex = 0;
-        for (int i = 0 ; i < intList.length ; i++){
-            for (int j = 0 ; j <intList.length ; j++){
-                if (i != j && (intList[i] == intList[j])){
-                    if (intList[i] % 2 == 0 && intList[j] % 2 == 0){
-                        duplicate[startIndex++] = intList[i];
-                        break;
-                    }
+        Arrays.sort(intList);
+        int value = intList[0],index = 1,count = 1;
+        for (int i = 1 ; i < intList.length ; i++){
+            for (int j = index ; j <intList.length ; j++){
+                if (value == intList[j]){
+                    count +=1;
+                    if (index  < intList.length)
+                        index = j+1;
                 }
             }
+            System.out.println(value +" sayısı " +count+" kere tekrar edildi.");
+            if (index == intList.length) {
+                break;
+            }
+            value = intList[index];
+            count=0;
         }
-        System.out.println(Arrays.toString(duplicate));
+
     }
 }
