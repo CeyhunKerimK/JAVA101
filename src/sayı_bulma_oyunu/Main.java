@@ -23,6 +23,7 @@ public class Main {
                     System.out.println("hakkınız 1 azaldı kalan hakkınız : "+right+" daha dikkatli düşünün");
                     if (right == 0){
                         System.out.println("hakkınız kalmadı\nSayı :"+number+" idi");
+
                     }
                 }
             }
